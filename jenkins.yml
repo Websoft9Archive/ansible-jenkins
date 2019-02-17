@@ -1,0 +1,13 @@
+---
+- name: Jenkins
+  hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  
+  roles:
+  - { role: common , tags: "common"} 
+  - { role: jenkins  , tags: "jenkins"} 
+  - { role: nginx , tags: "nginx"}
+
+    

@@ -1,22 +1,11 @@
 ---
-- name: add Oracle JAVA PPA
-  apt_repository:
-    repo: ppa:webupd8team/java 
-
-- name: Accept oracle license
-  debconf:
-    name: oracle-java8-installer
-    question: shared/accepted-oracle-license-v1-1
-    value: 'true'
-    vtype: select
-
-- name: Install Oracle JAVA
+- name: Install OpenJDK JAVA
   apt:
-    name: [oracle-java8-installer,oracle-java8-set-default]
+    name: openjdk-8-jdk
 
 - name: Setting JRE Securerandom
   lineinfile:
-    path: /usr/lib/jvm/java-8-oracle/jre/lib/security/java.security
+    path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
     regexp: 'securerandom.source=file:/dev/random'
     line: 'securerandom.source=file:/dev/./urandom'
 

@@ -20,5 +20,6 @@
   - { role: common , tags: "common"} 
   - { role: jenkins  , tags: "jenkins"} 
   - { role: nginx , tags: "nginx"}
+  - { role: end, tags: "end" }
 
     

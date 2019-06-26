@@ -8,11 +8,13 @@
 
 ## 服务器配置要求
 
-最低4G内存，30G系统盘空间，否则无法安装
+最低1G内存，10G系统盘空间，否则无法安装。[点击](https://jenkins.io/zh/doc/pipeline/tour/getting-started/)查看官方的系统配置要求:
 
 ## 版本
 
-本项目采用APT安装，Jenkins官方已经提供了保持最新的源地址，因此可以保证每次安装都是最新版本。Jenkins的[版本号查看](https://jenkins.io/zh/download/)
+本项目采用APT安装，Jenkins官方已经提供了保持最新的源地址，因此可以保证每次安装都是最新版本。
+
+Jenkins的[版本号查看](https://jenkins.io/zh/download/)
 
 
 ## 安装指南

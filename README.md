@@ -12,7 +12,7 @@
 
 ## 版本
 
-本项目采用Yum安装，版本查看
+本项目采用APT安装，Jenkins官方已经提供了保持最新的源地址，因此可以保证每次安装都是最新版本。Jenkins的[版本号查看](https://jenkins.io/zh/download/)
 
 
 ## 安装指南

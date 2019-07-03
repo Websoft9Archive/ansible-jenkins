@@ -23,5 +23,7 @@
 - name: Install jenkins
   apt:
     name: jenkins
-  notify: restart jenkins
+
+- name: restart jenkins
+  service: name=jenkins state=restarted enabled=yes
 

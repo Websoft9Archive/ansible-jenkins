@@ -6,7 +6,7 @@
 
 ## 配置要求
 
-操作系统：目支持Ubuntu18.x 或 CentOS7.x 以上部署此脚本  
+操作系统：目支持Ubuntu18.x 以上部署此脚本  
 硬件配置：最低1核2G，10G系统盘空间，否则无法安装
 
 更多配置要求请参考官方文档：https://jenkins.io/zh/doc/pipeline/tour/getting-started/

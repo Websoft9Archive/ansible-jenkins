@@ -15,11 +15,10 @@
   become_method: sudo
   
   roles:
- # - { role: common , tags: "common"} 
+  - { role: common , tags: "common"} 
   - { role: docker , tags: "docker"} 
-  #- { role: jenkins  , tags: "jenkins"} 
-  #- { role: nginx , tags: "nginx"}
-  #- { role: end , tags: "end"}
-  
+  - { role: jenkins  , tags: "jenkins"} 
+  - { role: nginx , tags: "nginx"}
+  - { role: end , tags: "end"}
 
     

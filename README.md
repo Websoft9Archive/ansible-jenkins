@@ -18,7 +18,7 @@
 
 更多请见[参数表](/docs/zh/stack-components.md)
 
-## 本项目安装的是 Jenkin 最新版吗？
+## 本项目安装的是 Jenkins 最新版吗？
 
 本项目采用APT安装，Jenkins官方已经提供了保持最新的源地址，因此可以保证每次安装都是最新版本。
 
@@ -26,16 +26,23 @@ Jenkins的[版本号查看](https://jenkins.io/zh/download/)
 
 ## 安装指南
 
-以 root 用户登录 Linux，运行下面的**命令脚本**即可启动自动化部署，然后耐心等待，直至安装成功。
+## 安装指南
+
+登录 Linux，运行下面的**命令脚本**即可启动自动化部署，然后耐心等待，直至安装成功。
 
 ```
-# coming soon
-```  
+#非 root 用户登录后，需先提升成为 root 权限
+sudo su -
+
+#自动化安装命令
+wget https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/install.py ; python install.py playb=jenkins url=https://github.com/Websoft9/ansible-jenkins.git init=0 ansible=y
+
+```
 
 注意：  
 
-1. 如果以非 root 用户身份登录 Linux，请先通过 sudo 或 su 提升权限，再运行脚本。
-2. 由于自动化安装过程中有大量下载任务，若网络不通（或速度太慢）会引起下载失败，从而导致安装程序终止运行。此时，请重置服务器后再次尝试安装，若仍然无法完成，请使用我们在公有云上发布的 [GitLab 镜像](https://apps.websoft9.com/jenkins) 的部署方式
+1. 自动化脚本需服务器上已经安装 Python 2.7 或以上版本方可运行，一般操作系统会自带 Python。如果无法运行，系统会提示用户先安装 Python，再运行自动化安装命令。
+2. 由于自动化安装过程中有大量下载任务，若网络不通（或速度太慢）会引起下载失败，从而导致安装程序终止运行。此时，请重置服务器后再次尝试安装，若仍然无法完成，请使用我们在公有云上发布的 [BT 镜像](https://apps.websoft9.com/jenkins 的部署方式
 
 
 ## 文档

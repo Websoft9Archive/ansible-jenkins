@@ -1,5 +1,5 @@
 ---
-- name: Jenkins
+- name: Pre_Jenkins
   hosts: all
   become: yes
   become_method: sudo
@@ -16,9 +16,7 @@
   
   roles:
   - { role: common , tags: "common"} 
+  - { role: cloud , tags: "cloud"} 
   - { role: jenkins  , tags: "jenkins"} 
   - { role: nginx , tags: "nginx"}
   - { role: end , tags: "end"}
-  
-
-    

@@ -18,6 +18,6 @@
   roles:
   - { role: common , tags: "common"} 
   - { role: cloud , tags: "cloud"} 
-  - { role: jenkins , tags: "jenkins"} 
   - { role: nginx , tags: "nginx"}
+  - { role: jenkins , tags: "jenkins"} 
   - { role: end , tags: "end"}

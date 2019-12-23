@@ -1,3 +1,7 @@
+- name: Check Cloud
+  shell: echo "{{ansible_kernel}}" | awk -F '-' '{print $3}'
+  register: cloud
+
 # Centos 更新 安装基础软件工具等操作
 - block:
   - name: System Upgrade
@@ -37,6 +41,7 @@
       update_cache: yes
       force_apt_get: True
       autoremove: yes
+  when: cloud.stdout != 'aws'
 
   - name: Install Common Software
     apt: 

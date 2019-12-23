@@ -41,7 +41,7 @@
       update_cache: yes
       force_apt_get: True
       autoremove: yes
-  when: cloud.stdout != 'aws'
+    when: cloud.stdout != 'aws'
 
   - name: Install Common Software
     apt: 

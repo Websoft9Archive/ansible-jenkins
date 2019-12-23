@@ -42,7 +42,7 @@
   - name: AWS Configure
     apt:
       name: ec2-instance-connect
-      update_cache: yes
+      update_cache: no
     when: ansible_distribution == 'Ubuntu'
 
   - name: AWS Configure

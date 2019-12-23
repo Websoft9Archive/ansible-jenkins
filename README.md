@@ -14,7 +14,7 @@
 
 ## 组件
 
-包含的核心组件为：Jenkins,Nginx
+包含的核心组件为：Jenkins,Nginx,Java,Docker
 
 更多请见[参数表](/docs/zh/stack-components.md)
 

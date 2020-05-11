@@ -1,8 +1,4 @@
 ---
-- name: Install OpenJDK JAVA
-  apt:
-    name: openjdk-8-jdk
-
 - name: Setting JRE Securerandom
   lineinfile:
     path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
@@ -23,19 +19,3 @@
 - name: Install jenkins
   apt:
     name: jenkins
-
-- name: restart jenkins
-  service: name=jenkins state=restarted enabled=yes
-
-#设置Nginx转发
-- name: Config Nginx
-  copy:
-    src: default
-    dest: /etc/nginx/conf.d/default.conf
-
-- name: Started Nginx
-  service:
-    name: nginx
-    state: restarted
-    enabled: yes
-

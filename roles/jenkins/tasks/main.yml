@@ -1,4 +1,21 @@
+# Install Jenkins by OS_family
 - debug:
     msg: Jenkins will be installed on {{ ansible_distribution }} 
 
 - include: "{{ansible_os_family}}.yml"
+
+# Enable service
+- name: restart jenkins
+  service: name=jenkins state=restarted enabled=yes
+
+# Set Nginx
+- name: Config Nginx
+  copy:
+    src: default
+    dest: /etc/nginx/conf.d/default.conf
+
+- name: Started Nginx
+  service:
+    name: nginx
+    state: restarted
+    enabled: yes

@@ -22,9 +22,6 @@
     ln -sb /var/log/jenkins/ /data/logs/jenkins
 
 # display version and service state of components
-- name: Get Jenkins version
-  shell: sudo sh -c 'echo "Jenkins $(apt show jenkins | grep Version)" 1>> /data/logs/install_version.txt'
-
 - name: Check Jenkins Service
   shell: systemctl status jenkins | grep Active*
   register: check_jenkins_service

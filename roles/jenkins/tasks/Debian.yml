@@ -1,7 +1,10 @@
 ---
+# Stable url https://pkg.jenkins.io/debian-stable
+# Latest url https://pkg.jenkins.io/debian
+
 - name: Add an Apt signing jenkins key
   apt_key:
-    url: https://pkg.jenkins.io/debian/jenkins.io.key
+    url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
     state: present
 
 - name: Add jenkins repository 

@@ -13,9 +13,6 @@
 # Enable service
 - name: restart jenkins
   service: name=jenkins state=restarted enabled=yes
-
-- name: Download jenkins CLI
-  shell: wget -O /data/wwwroot/jenkins/jenkins-cli.jar http://localhost/jnlpJars/jenkins-cli.jar
     
 # set soft link, -b over
 # ln -sb src des

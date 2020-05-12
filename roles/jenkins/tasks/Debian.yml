@@ -1,15 +1,10 @@
 ---
-- name: Add an Apt signing jenkins key
-  apt_key:
-    url: https://pkg.jenkins.io/debian/jenkins.io.key
-    state: present
-
-- name: Add jenkins repository 
-  apt_repository:
-    repo: deb https://pkg.jenkins.io/debian-stable binary/
-    state: present
-    filename: jenkins
-
+- name: Configure Apt repo
+  shell: |
+    wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+    sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+    apt-get update
+    
 - name: Install jenkins
   apt:
     name: jenkins

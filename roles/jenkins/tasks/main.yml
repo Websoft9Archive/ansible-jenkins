@@ -9,13 +9,15 @@
   service: name=jenkins state=restarted enabled=yes
 
 - name: Download jenkins CLI
-  shell: wget -O /data/wwwroot/jenkins-cli.jar http://localhost/jnlpJars/jenkins-cli.jar
+  shell: |
+    mkdir /data/wwwroot/jenkins
+    wget -O /data/wwwroot/jenkins/jenkins-cli.jar http://localhost/jnlpJars/jenkins-cli.jar
     
 # set soft link, -b over
 # ln -sb src des
 - name: set soft link
   shell: |
-    ln -sb /usr/share/jenkins  /data/wwwroot/jenkins
+    ln -sb /usr/share/jenkins  /data/wwwroot/jenkins/jenkins
     ln -sb /var/log/jenkins/ /data/logs/jenkins
 
 # display version and service state of components

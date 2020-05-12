@@ -23,7 +23,7 @@
 
 # display version and service state of components
 - name: Get Jenkins version
-  shell: echo "Jenkins version is" 1>> /data/logs/install_version.txt
+  shell: sudo sh -c 'echo "Jenkins version can not got now" 1>> /data/logs/install_version.txt'
 
 - name: Check Jenkins Service
   shell: systemctl status jenkins | grep Active*

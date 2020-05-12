@@ -14,3 +14,6 @@
 - name: Install jenkins
   apt:
     name: jenkins
+    
+- name: Get Jenkins version
+  shell: sudo sh -c 'echo "Jenkins $(apt show jenkins | grep Version)" 1>> /data/logs/install_version.txt'

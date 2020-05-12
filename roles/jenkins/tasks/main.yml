@@ -7,3 +7,19 @@
 # Enable service
 - name: restart jenkins
   service: name=jenkins state=restarted enabled=yes
+
+# set soft link, -b over
+# ln -sb src des
+- name: set soft link
+  shell: |
+    ln -sb /usr/share/jenkins  /data/wwwroot/jenkins
+    ln -sb /var/log/jenkins/ /data/logs/jenkins
+
+# display version and service state of components
+- name: Get Jenkins version
+  shell: echo "Jenkins version is" 1>> /data/logs/install_version.txt
+
+- name: Check Jenkins Service
+  shell: systemctl status jenkins | grep Active*
+  register: check_jenkins_service
+  notify: check_jenkins_service

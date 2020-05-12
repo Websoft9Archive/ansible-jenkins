@@ -10,16 +10,21 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 
 ## Jenkins Installation Wizard
 
-1. Using local Chrome or Firefox to visit the URL *http://DNS:15672* or *http://Internet IP:15672*, you will enter installation wizard of Jenkins
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-login-websoft9.png)
+1. Using local Chrome or Firefox to visit the URL *http://DNS* or *http://Internet IP*, you will enter installation wizard of Jenkins
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installstart-websoft9.png)
 
-2. Log in to Jenkins web console([Don't have password?](/stack-accounts.md#jenkins))  
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-bk-websoft9.png)
+2. Run the command `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` to get the password
 
-3. Set you new password from: 【Users】>【Admin】>【Permissions】>【Update this user】
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-pw-websoft9.png)
+3. Login the Jenkins console  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installcustomer-websoft9.png)
 
-> More useful Jenkins guide, please refer to [Jenkins Documentation](https://www.jenkins.com/documentation.html)
+3. Install plugins  
+   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installing-websoft9.png)
+
+3. Create user for Jenkins  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installusers-websoft9.png)
+
+> More useful Jenkins guide, please refer to [Jenkins Documentation](https://www.jenkins.io/zh/doc/)
 
 ## Q&A
 
@@ -27,4 +32,6 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 
 Your TCP:15672 of Security Group Rules is not allowed so there no response from Chrome or Firefox
 
-#### Jenkins service can't start? 
+#### Jenkins 解锁密码 initialAdminPassword 是什么？
+
+主要用于第一次登录 Jenkins，解锁密码就是默认的管理员账号 `admin` 对应的密码

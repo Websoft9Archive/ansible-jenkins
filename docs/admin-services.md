@@ -2,44 +2,29 @@
 
 These commands you must know when you using the Jenkins of Websoft9
 
-## Jenkins
+### Jenkins
 
 ```shell
-sudo systemctl start jenkins-server
-sudo systemctl stop jenkins-server
-sudo systemctl restart jenkins-server
-sudo systemctl status jenkins-server
-
-# you can use this debug mode if Jenkins service can't run
-jenkins-server console
+sudo systemctl start jenkins
+sudo systemctl stop jenkins
+sudo systemctl restart jenkins
+sudo systemctl status jenkins
 ```
 
-## Jenkins
+### Nginx
 
 ```shell
-sudo systemctl start jenkins-server
-sudo systemctl stop jenkins-server
-sudo systemctl restart jenkins-server
-sudo systemctl status jenkins-server
-
-# you can use this debug mode if Jenkins service can't run
-jenkins-server console
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
 ```
 
-### MySQL
+### Docker
 
 ```shell
-sudo systemctl start mysql
-sudo systemctl stop mysql
-sudo systemctl restart mysql
-sudo systemctl status mysql
-```
-
-### Redis
-
-```shell
-systemctl start redis
-systemctl stop redis
-systemctl restart redis
-systemctl status redis
+sudo systemctl start docker
+sudo systemctl restart docker
+sudo systemctl stop docker
+sudo systemctl status docker
 ```

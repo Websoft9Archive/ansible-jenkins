@@ -6,9 +6,9 @@ home: false
 
 This documentation is provided by [Websoft9](https://www.websoft9.com/), it can help users to acquire skills of Jenkins Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
-[Jenkins](https://jenkins-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of Jenkins world-wide at small startups and large enterprises, Jenkins is the most popular open source message broker.
+[Jenkins](https://www.jenkins.io) is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins_is_the_hub_CD_Devops.png)
 
 ---
 

@@ -26,4 +26,4 @@ yum update -y
 
 ## Jenkins Upgrade
 
-Refer to the official docs: [Upgrading Jenkins](https://www.jenkins.com/upgrade.html)
+Refer to the official docs: [Upgrading Jenkins](https://www.jenkins.io/zh/doc/upgrade-guide/)

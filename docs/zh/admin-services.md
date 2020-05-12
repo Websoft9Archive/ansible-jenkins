@@ -2,7 +2,7 @@
 
 使用由Websoft9提供的 Jenkins 部署方案，可能需要用到的服务如下：
 
-## Jenkins
+### Jenkins
 
 ```shell
 sudo systemctl start jenkins
@@ -18,4 +18,13 @@ sudo systemctl start nginx
 sudo systemctl stop nginx
 sudo systemctl restart nginx
 sudo systemctl status nginx
+```
+
+### Docker
+
+```shell
+sudo systemctl start docker
+sudo systemctl restart docker
+sudo systemctl stop docker
+sudo systemctl status docker
 ```

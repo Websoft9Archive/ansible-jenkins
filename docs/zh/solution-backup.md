@@ -39,6 +39,10 @@ sidebarDepth: 3
 
 不同云平台的自动备份方案有一定的差异，详情参考 [云平台备份方案](https://support.websoft9.com/docs/faq/zh/tech-instance.html)
 
+### 插件备份
+
+建议通过 [Backup plugin](https://plugins.jenkins.io/backup/) 备份 Jenkins
+
 ### 程序手工备份
 
 程序手工本地备份是通过**下载应用程序源码和导出数据库文件**实现最小化的备份方案。
@@ -52,10 +56,8 @@ sidebarDepth: 3
 - 技能要求：非常容易
 - 自动化：无
 ```
+
 通用的手动备份操作步骤如下：
 
-1. 通过 WinSCP 将网站目录（*/data/wwwroot/*）**压缩后**再完整的下载到本地
-2. 通过 phpMyAdmin 逐个导出数据库
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/mysql/phpmyadmin-export-websoft9.png)
-3. 将程序文件和数据库文件放到同一个文件夹，根据日期命名
-4. 备份工作完成
+1. 通过 WinSCP 将网站目录（*/data/wwwroot/jenkins）**压缩后**再完整的下载到本地
+2. 备份工作完成

@@ -30,6 +30,7 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 
 You can see the version from product page of Marketplace. However, after being deployed to your server, the components will be automatically updated, resulting in a certain change in the version number. Therefore, the exact version number should be viewed by running the command on the server:
 
+
 ```shell
 # Check all components version
 sudo cat /data/logs/install_version.txt
@@ -37,10 +38,17 @@ sudo cat /data/logs/install_version.txt
 # Linux Version
 lsb_release -a
 
-# erlang  Version
-yum info erlang
-apt show erlang
+# Nginx  Version
+nginx -V
+
+# Java version
+java -v
+
+# Docker Version
+docker -v
 
 # Jenkins version
-rabbitmqctl status | grep Jenkins*
+yum info jenkins
+apt show jenkins
+
 ```

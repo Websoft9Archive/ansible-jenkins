@@ -24,4 +24,4 @@ yum update -y
 
 ## Jenkins升级
 
-详情参考官方升级文档：[Upgrading Jenkins](https://www.jenkins.com/upgrade.html)
+详情参考官方升级文档：[Upgrading Jenkins](https://www.jenkins.io/zh/doc/upgrade-guide/)

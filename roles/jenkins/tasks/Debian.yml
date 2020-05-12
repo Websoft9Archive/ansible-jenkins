@@ -9,6 +9,7 @@
     repo: deb https://pkg.jenkins.io/debian-stable binary/
     state: present
     filename: jenkins
+    update_cache: yes
     
 - name: Install jenkins
   apt:

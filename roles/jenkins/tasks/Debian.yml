@@ -1,10 +1,4 @@
 ---
-- name: Setting JRE Securerandom
-  lineinfile:
-    path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
-    regexp: 'securerandom.source=file:/dev/random'
-    line: 'securerandom.source=file:/dev/./urandom'
-
 - name: Add an Apt signing jenkins key
   apt_key:
     url: https://pkg.jenkins.io/debian/jenkins.io.key

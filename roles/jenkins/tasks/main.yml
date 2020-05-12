@@ -8,10 +8,11 @@
 - name: restart jenkins
   service: name=jenkins state=restarted enabled=yes
 
+- name: Create Jenkins directory
+  shell: mkdir /data/wwwroot/jenkins
+  
 - name: Download jenkins CLI
-  shell: |
-    mkdir /data/wwwroot/jenkins
-    wget -O /data/wwwroot/jenkins/jenkins-cli.jar http://localhost/jnlpJars/jenkins-cli.jar
+  shell: wget -O /data/wwwroot/jenkins/jenkins-cli.jar http://localhost/jnlpJars/jenkins-cli.jar
     
 # set soft link, -b over
 # ln -sb src des

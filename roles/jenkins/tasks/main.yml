@@ -18,7 +18,7 @@
 # ln -sb src des
 - name: set soft link
   shell: |
-    ln -sb /usr/share/jenkins  /data/wwwroot/jenkins/jenkins
+    ln -sb /var/lib/jenkins /data/wwwroot/jenkins/jenkins
     ln -sb /var/log/jenkins/ /data/logs/jenkins
 
 # display version and service state of components

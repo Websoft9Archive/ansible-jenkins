@@ -12,7 +12,7 @@
   - { role: role_common , tags: "role_common"} 
   - { role: role_cloud , tags: "role_cloud"} 
   - { role: role_jdk , tags: "role_jdk"} 
-  #- { role: role_nginx , tags: "role_nginx"}
+  - { role: role_nginx , tags: "role_nginx"}
   - { role: jenkins , tags: "jenkins"} 
   - { role: role_docker , tags: "role_docker"} 
   - { role: role_preend, tags: "role_preend" }

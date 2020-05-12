@@ -1,4 +1,3 @@
----
-- name: restart jenkins
-  service: name=jenkins state=restarted enabled=yes
-
+- name: check_jenkins_service
+  debug:
+    var: check_jenkins_service.stdout

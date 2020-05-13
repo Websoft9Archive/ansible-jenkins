@@ -61,5 +61,6 @@ java -v
 docker -v
 
 # Jenkins version
-
+yum info jenkins
+apt show jenkins
 ```

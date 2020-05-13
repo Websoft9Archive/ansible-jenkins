@@ -6,12 +6,19 @@ The Jenkins deployment package contains a sequence software (referred to as "com
 
 ### Jenkins
 
-Jenkins installation directory:  */data/jenkins*  
+Jenkins installation directory:  */data/wwwroot/jenkins*  
 Jenkins logs directory:  */data/logs/jenkins*  
 
-### Erlang
+### Java
 
-Erlang installation directory:  */data/erlang*  
+Java Directory: */usr/lib/jvm*
+
+### Nginx
+
+Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
+Nginx main configuration file: */etc/nginx/nginx.conf*   
+Nginx logs file: */var/log/nginx*  
+Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
 
 ## Ports
 
@@ -21,9 +28,9 @@ You can run the cmd `netstat -tunlp` to list all used ports, and we list the fol
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
-| HTTP | 8161 | HTTP requests for Jenkins Console| Required |
-| HTTPS | 5672 | epmd | Optional |
-| TCP | 55672 | Erlang distribution | Optional |
+| TCP | 80 | HTTP requests for Jenkins Console| Required |
+| TCP | 443 | HTTP requests for Jenkins Console| Optional |
+| TCP | 8080 | Jenkins network port, used nginx for proxy | Optional |
 
 
 ## Version

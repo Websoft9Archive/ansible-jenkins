@@ -35,6 +35,10 @@ Automation Backups for Instance is using the **Snapshot** or **Cloud Server Back
 
 Different Cloud Platform's snapshot settings slightly different, refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
 
+### Jenkins Backup plugin
+
+We suggest you use the [Backup plugin](https://plugins.jenkins.io/backup/) for Jenkins backups
+
 ### Manual backup for application
 
 Manual backup for application is based on the **Exporting source code and database of application** to achieve a minimized backup scheme.
@@ -49,8 +53,5 @@ Manual backup for application is based on the **Exporting source code and databa
 ```
 The general manual backup operation steps are as follows:
 
-1. Just compression and download the entire */data/wwwroot* directory by SFTP 
-2. Export LAMP's database by [phpMyAdmin](/admin-mysql.md)
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-export-websoft9.png)
-3. Put the source code file and database file in the same folder, named according to the date
-4. Backup completed
+1. Just compression and download the entire **/data/wwwroot/jenkins* directory by SFTP 
+2. Backup completed

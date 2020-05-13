@@ -14,7 +14,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/), it can 
 
 ## Improve
 
-This document will continue to improve and broadly absorb the needs of users. If you have good idea, please don't hesitate to give us feedback by "Edit this page on GitHub", and welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-jenkins)
+This document will continue to improve and broadly absorb the needs of users. If you have good idea, please don't hesitate to give us feedback by **Edit this page on GitHub**, and welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-jenkins)
 
 ## Scope
 

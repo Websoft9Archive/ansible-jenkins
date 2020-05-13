@@ -6,7 +6,7 @@ home: false
 
 本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Jenkins 的安装部署与基本运维技术，包括：Jenkins部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-[Jenkins](https://www.jenkins.io/zh) 是基于Java开发的开源 CI&CD 软件， 提供超过1000个插件来支持构建、部署、自动化， 满足各种项目的 DevOps 需要。
+[Jenkins](https://www.jenkins.io/zh) 是基于Java语言开发的开源持续集成（CI&CD）软件， 提供超过1000个插件来支持构建、部署、自动化， 满足各种项目的 DevOps 需要。
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins_is_the_hub_CD_Devops.png)
 

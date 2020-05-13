@@ -18,10 +18,13 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 3. Login the Jenkins console  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installcustomer-websoft9.png)
 
-3. Install plugins  
+4. Install plugins  
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installing-websoft9.png)
 
-3. Create user for Jenkins  
+5. Modify the password of admin user
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-modfiypw-websoft9.png)
+
+6. Create user for Jenkins  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installusers-websoft9.png)
 
 > More useful Jenkins guide, please refer to [Jenkins Documentation](https://www.jenkins.io/zh/doc/)
@@ -32,6 +35,6 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 
 Your TCP:15672 of Security Group Rules is not allowed so there no response from Chrome or Firefox
 
-#### Jenkins 解锁密码 initialAdminPassword 是什么？
+#### What is the Jenkins's initialAdminPassword?
 
-主要用于第一次登录 Jenkins，解锁密码就是默认的管理员账号 `admin` 对应的密码
+initialAdminPassword is the default administrator user admin password

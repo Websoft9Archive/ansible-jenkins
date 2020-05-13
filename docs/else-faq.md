@@ -1,27 +1,20 @@
 # FAQ
 
-#### How can I enable the debug mode of Jenkins service?
+#### Jenkins support multi-languages?
 
-```
-systemctl stop jenkins-server
-jenkins-server console
-```
+Yes, you can change you language very easy in you Jenkins Console
 
-#### Can I reset password of Jenkins by command?
+#### Is there CLI tool for Jenkins?
 
-Yes, e.g `rabbitmqctl change_password  admin newpassword`
+Yes, please refer to [Jenkins CLI](/zh/solution-cli.md)
+
+#### How can I extend more functions for Jenkins?
+
+Install more [plugins](https://plugins.jenkins.io/)
 
 #### If there is no domain name, can I deploy Jenkins?
 
-Yes, visit Jenkins by *http://Internet IP:8161*
-
-#### What is the password for the database root user?
-
-The password is stored in the server related file: `/credentials/password.txt`
-
-#### Is there a web-base GUI database management tools?
-
-Yes, phpMyAdmin is on it, visit by *http://Internet IP/phpmyadmin*
+Yes, visit Jenkins by *http://Internet IP*
 
 #### Is it possible to modify the source path of Jenkins?
 
@@ -32,7 +25,7 @@ No
 Change owner(group) or permissions like below:
 
 ```shell
-chown -R apache.apache /data/wwwroot
+chown -R nginx.nginx /data/wwwroot
 find /data/wwwroot -type d -exec chmod 750 {} \;
 find /data/wwwroot -type f -exec chmod 640 {} \;
 ```

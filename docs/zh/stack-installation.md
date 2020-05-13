@@ -13,15 +13,18 @@
 1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP*, 进入初始化页面
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installstart-websoft9.png)
 
-2. 获取管理解锁密码
+2. 运行命令`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`，获取管理解锁密码
 
 3. 成功登录到 Jenkins 后台  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installcustomer-websoft9.png)
 
-3. 安装插件  
-   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installing-websoft9.png)
+4. 安装插件  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installing-websoft9.png)
 
-3. 创建管理员用户  
+6. 修改管理员admin的密码
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-modfiypw-websoft9.png)
+
+5. 创建更多管理员用户  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installusers-websoft9.png)
 
 > 需要了解更多 Jenkins 的使用，请参考官方文档：[Jenkins 用户文档中心](https://www.jenkins.io/zh/doc/)

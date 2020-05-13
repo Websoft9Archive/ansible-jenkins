@@ -18,8 +18,8 @@
    SMTP username: websoft9@163.com
    SMTP password: #wwBJ8    //此密码不是邮箱密码，是需要通过163邮箱后台设置去获取的授权码
    ```
-2. 登录 Jenkins 控制台，依次打开：【Manage Jenkins】>【Configure System】，填写 SMTP 参数
-![Metabase SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins_configuresmtp-websoft9.png)
+3. 登录 Jenkins 控制台，依次打开：【Manage Jenkins】>【Configure System】，填写 SMTP 参数
+![Jenkins SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins_configuresmtp-websoft9.png)
 
 4. 测试邮件是否可以发送
 

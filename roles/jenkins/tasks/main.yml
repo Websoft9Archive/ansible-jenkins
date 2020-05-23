@@ -12,7 +12,7 @@
   service: name=jenkins state=restarted enabled=yes
 
 - name: Copy init_password.service
-  template:
+  copy:
     src: init_password.service
     dest: /lib/systemd/system/init-password.service
     

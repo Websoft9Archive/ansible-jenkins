@@ -2,6 +2,9 @@
 # Stable url https://pkg.jenkins.io/debian-stable
 # Latest url https://pkg.jenkins.io/debian
 
+- debug:
+    msg: Jenkins will be installed on {{ ansible_distribution }} 
+
 - name: Add an Apt signing jenkins key
   apt_key:
     url: https://pkg.jenkins.io/debian-stable/jenkins.io.key

@@ -5,9 +5,6 @@
     state: directory
     
 # Install Jenkins by OS_family
-- debug:
-    msg: Jenkins will be installed on {{ ansible_distribution }} 
-
 - include: "{{ansible_os_family}}.yml"
 
 # Enable service

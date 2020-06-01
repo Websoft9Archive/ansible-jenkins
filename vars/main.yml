@@ -9,5 +9,4 @@ init_application:
     password: "123456"
     service_before: jenkins-server
     commands: 
-      - grafana-cli admin reset-admin-password $new_password
-      - sed -i "s/grafana administrator password:{{dbs.password}}/grafana administrator password:$new_password/" /credentials/password.txt
+      - rm -rf /var/lib/jenkins/*

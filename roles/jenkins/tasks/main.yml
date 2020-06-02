@@ -10,14 +10,6 @@
 # Enable service
 - name: enable and restart jenkins
   service: name=jenkins state=restarted enabled=yes
-
-- name: Copy init_password.service
-  copy:
-    src: init_password.service
-    dest: /lib/systemd/system/init-password.service
-    
-- name: enable init-password service
-  service: name=init-password enabled=yes
     
 # set soft link, -b over
 # ln -sb src des

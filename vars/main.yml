@@ -7,7 +7,7 @@ init_application:
   jenkins:
     username: admin
     password: "123456"
-    service_before: jenkins-server
+    service_before: jenkins.service
     commands: 
       - rm -rf /var/lib/jenkins/*
       - rm -rf /credentials

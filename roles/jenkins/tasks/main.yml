@@ -15,9 +15,9 @@
 # ln -sb src des
 - name: set soft link
   shell: |
-    ls -sb /usr/lib/jenkins /data/wwwroot/jenkins/jenkins.war
-    ln -sb /var/lib/jenkins /data/wwwroot/jenkins/jenkins
-    ln -sb /var/log/jenkins/ /data/logs/jenkins
+    ls -sf /usr/lib/jenkins /data/wwwroot/jenkins/jenkins.war
+    ln -sf /var/lib/jenkins /data/wwwroot/jenkins
+    ln -sf /var/log/jenkins/ /data/logs/jenkins
 
 # display version and service state of components
 - name: Check Jenkins Service

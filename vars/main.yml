@@ -1,7 +1,7 @@
 jdk_version: "8" 
 nginx_reverse_proxy_port: "8080"
 
-preend_certbot: True
+common_os_support: ["CentOS", "Ubuntu", "Amazon"]
 
 init_application:
   jenkins:

@@ -47,6 +47,10 @@ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/
 1. 自动化脚本需服务器上已经安装 Python 2.7 或以上版本方可运行，一般操作系统会自带 Python。如果无法运行，系统会提示用户先安装 Python，再运行自动化安装命令。
 2. 由于自动化安装过程中有大量下载任务，若网络不通（或速度太慢）会引起下载失败，从而导致安装程序终止运行。此时，请重置服务器后再次尝试安装，若仍然无法完成，请使用我们在公有云上发布的 [Jenkins 镜像](https://apps.websoft9.com/jenkins) 的部署方式
 
+## License
+
+[LGPL-3.0](/License.md), Additional Terms: It is not allowed to publish free or paid image based on this repository in any Cloud platform's Marketplace.
+Copyright (c) 2016-present, Websoft9
 
 ## 文档
 

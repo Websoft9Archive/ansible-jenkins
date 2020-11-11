@@ -38,7 +38,7 @@ Jenkins的[版本号查看](https://jenkins.io/zh/download/)
 sudo su -
 
 #自动化安装命令
-wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r jenkins
+wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/main/scripts/install.sh; bash install.sh -r jenkins
 
 ```
 

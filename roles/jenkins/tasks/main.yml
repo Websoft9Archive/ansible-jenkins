@@ -11,9 +11,10 @@
 
 - name: Create a Jenkins directory if it does not exist
   file:
-    path: /data/wwwroot/jenkins
+    path: /data/wwwroot/jenkins/data
     state: directory
-    remote_user: jenkins
+    recurse: yes
+  remote_user: jenkins
 
 - name: change file permissions
   shell: |
@@ -32,6 +33,12 @@
 - name: enable and restart jenkins
   service: name=jenkins state=restarted enabled=yes
 
+- name: input jenkins version
+  shell: sudo echo $(cat /data/wwwroot/jenkins/data/config.xml |grep version |sed -n 2p |tr -d "</>version") |sudo tee -a /data/logs/install_version.txt
+
+- name: set softlink
+  shell: sudo echo $(cat /data/wwwroot/jenkins/data/config.xml |grep version |sed -n 2p |tr -d "</>version") |sudo tee -a /data/logs/install_version.txt
+  
 - name: Check Jenkins Service
   shell: systemctl status jenkins | grep Active*
   register: check_jenkins_service

@@ -51,11 +51,4 @@ nginx -V
 # Java version
 java -v
 
-# Docker Version
-docker -v
-
-# Jenkins version
-yum info jenkins
-apt show jenkins
-
 ```

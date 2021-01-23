@@ -1,6 +1,6 @@
 [Unit]
 Description=Jenkins applicaion service
-Documentation=https://jenkins.io/zh/doc
+Documentation=https://jenkins.io/doc
 After=syslog.target
 After=network.target
 
@@ -8,7 +8,7 @@ After=network.target
 User=jenkins
 Group=jenkins
 Type=simple
-ExecStart=/usr/bin/java -jar -DJENKINS_HOME=/data/wwwroot/jenkins /data/wwwroot/jenkins/jenkins.jar
+ExecStart=/usr/bin/java -jar -DJENKINS_HOME=/data/wwwroot/jenkins /data/wwwroot/jenkins/jenkins.war --logfile=/data/wwwroot/jenkins/logs/jenkins.log
 Restart=always
 StandardOutput=syslog
 StandardError=syslog

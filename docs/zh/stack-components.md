@@ -21,12 +21,7 @@ Java Directory: */usr/lib/jvm*
 
 Nginx 虚拟主机配置文件：*/etc/nginx/conf.d/default.conf*  
 Nginx 主配置文件： */etc/nginx/nginx.conf*  
-Nginx 日志文件： */var/log/nginx/*
-
-### Docker
-
-Docker 根目录: */var/lib/docker*  
-Docker 镜像目录: */var/lib/docker/image*   
+Nginx 日志文件： */var/log/nginx/* 
 
 ## 端口号
 
@@ -56,11 +51,4 @@ nginx -V
 
 # Java version
 java -v
-
-# Docker Version
-docker -v
-
-# Jenkins version
-yum info jenkins
-apt show jenkins
 ```

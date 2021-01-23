@@ -11,7 +11,7 @@
 
 - name: Create a Jenkins directory if it does not exist
   file:
-    path: /data/wwwroot/jenkins/data
+    path: /data/wwwroot/jenkins
     state: directory
     recurse: yes
   remote_user: jenkins
@@ -22,7 +22,7 @@
     setfacl -R -m u:jenkins:rwx /data/logs
 
 - name: download jenkins
-  shell: wget -P /data/wwwroot/jenkins http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+  shell: wget -P /data/wwwroot http://mirrors.jenkins.io/war-stable/latest/jenkins.war
   remote_user: jenkins
 
 - name: Setting jenkins service
@@ -34,10 +34,7 @@
   service: name=jenkins state=restarted enabled=yes
 
 - name: input jenkins version
-  shell: sudo echo $(cat /data/wwwroot/jenkins/data/config.xml |grep version |sed -n 2p |tr -d "</>version") |sudo tee -a /data/logs/install_version.txt
-
-- name: set softlink
-  shell: sudo echo $(cat /data/wwwroot/jenkins/data/config.xml |grep version |sed -n 2p |tr -d "</>version") |sudo tee -a /data/logs/install_version.txt
+  shell: sudo echo jenkins version $(cat /data/wwwroot/jenkins/config.xml |grep version |sed -n 2p |tr -d "</>version") |sudo tee -a /data/logs/install_version.txt
   
 - name: Check Jenkins Service
   shell: systemctl status jenkins | grep Active*

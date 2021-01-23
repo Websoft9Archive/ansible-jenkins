@@ -7,7 +7,7 @@ After=network.target
 [Service]
 User=jenkins
 Group=jenkins
-Type=forking
+Type=simple
 ExecStart=/usr/bin/java -jar -DJENKINS_HOME=/data/wwwroot/jenkins /data/wwwroot/jenkins.war
 Restart=always
 StandardOutput=syslog

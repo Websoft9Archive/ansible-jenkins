@@ -12,5 +12,5 @@ init_application:
     password: "123456"
     service_before: jenkins.service
     commands: 
-      - sudo rm -rf /var/lib/jenkins/*
+      - sudo rm -rf /www/root/jenkins/*
       - sudo rm -rf /credentials

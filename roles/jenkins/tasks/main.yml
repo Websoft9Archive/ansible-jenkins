@@ -1,25 +1,37 @@
-# Pre-installation
+- include: "{{ansible_os_family}}.yml"
+
+- name: Create User for jenkins
+  user: 
+    name: jenkins
+    comment: jenkins 
+    password_lock: yes
+       
+- name: rm -rf /data/wwwroot/jenkins
+  shell: rm -rf /data/wwwroot/jenkins
+
 - name: Create a Jenkins directory if it does not exist
   file:
     path: /data/wwwroot/jenkins
     state: directory
-    
-# Install Jenkins by OS_family
-- include: "{{ansible_os_family}}.yml"
+    remote_user: jenkins
 
-# Enable service
+- name: change file permissions
+  shell: |
+    setfacl -R -m u:jenkins:rwx /data/wwwroot 
+    setfacl -R -m u:jenkins:rwx /data/logs
+
+- name: download jenkins
+  shell: wget -P /data/wwwroot/jenkins http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+  remote_user: jenkins
+
+- name: Setting jenkins service
+  copy:
+    src: jenkins.service
+    dest: /lib/systemd/system/jenkins.service
+
 - name: enable and restart jenkins
   service: name=jenkins state=restarted enabled=yes
-    
-# set soft link, -b over
-# ln -sb src des
-- name: set soft link
-  shell: |
-    ls -sf /usr/lib/jenkins /data/wwwroot/jenkins/jenkins.war
-    ln -sf /var/lib/jenkins /data/wwwroot/jenkins
-    ln -sf /var/log/jenkins/ /data/logs/jenkins
 
-# display version and service state of components
 - name: Check Jenkins Service
   shell: systemctl status jenkins | grep Active*
   register: check_jenkins_service

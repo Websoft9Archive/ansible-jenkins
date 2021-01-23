@@ -1,0 +1,18 @@
+[Unit]
+Description=Jenkins applicaion service
+Documentation=https://jenkins.io/zh/doc
+After=syslog.target
+After=network.target
+
+[Service]
+User=jenkins
+Group=jenkins
+Type=simple
+ExecStart=/usr/bin/java -jar -DJENKINS_HOME=/data/wwwroot/jenkins /data/wwwroot/jenkins/jenkins.jar
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=jenkins
+
+[Install]
+WantedBy=multi-user.target

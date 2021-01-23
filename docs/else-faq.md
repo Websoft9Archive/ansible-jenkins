@@ -2,7 +2,7 @@
 
 #### Jenkins support multi-languages?
 
-Yes, you can change you language very easy in you Jenkins Console
+Yes, you can change you language very easy in you Jenkins Console,Jenkins displays text depending on the language of the browser, refer to[Jenkins Using local language](https://www.jenkins.io/doc/book/using/using-local-language/).
 
 #### Is there CLI tool for Jenkins?
 

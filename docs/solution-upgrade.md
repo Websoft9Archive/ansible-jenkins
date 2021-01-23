@@ -26,4 +26,15 @@ yum update -y
 
 ## Jenkins Upgrade
 
-Refer to the official docs: [Upgrading Jenkins](https://www.jenkins.io/zh/doc/upgrade-guide/)
+Jenkins recommended upgrade scheme:
+1. Login enkins, If the current version is not the latest stable version, a prompt will appear in the warning bar in the upper right corne
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-warning-websoft9.png)
+
+2. Click warning and select auto upgrade on the pop-up page
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-selectauto-websoft9.png)
+
+3. Wait on the upgrade page until the auto upgrade is complete
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-autoupdate-websoft9.png)
+
+4. Restart jenkins service, Jenkins has been updated to the latest stable version 
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-updatecok-websoft9.png)

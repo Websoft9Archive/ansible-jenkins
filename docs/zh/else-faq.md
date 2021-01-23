@@ -2,7 +2,7 @@
 
 #### Jenkins 是否支持中文？
 
-支持，可以很方便的切换多语言（包括中文）
+支持，可以很方便的切换多语言（包括中文），Jenkins根据浏览器的语言显示文本，详情参照[Jenkins 语言设置](https://www.jenkins.io/doc/book/using/using-local-language/)。
 
 #### Jenkins 是否提供CLI工具？
 

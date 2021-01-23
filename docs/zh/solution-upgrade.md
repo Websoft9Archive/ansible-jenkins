@@ -24,4 +24,15 @@ yum update -y
 
 ## Jenkins升级
 
-详情参考官方升级文档：[Upgrading Jenkins](https://www.jenkins.io/zh/doc/upgrade-guide/)
+Jenkins推荐升级方案：
+1. 登陆Jenkins后台，如果当前版本不是最新的稳定版本，会在右上角警告栏出现提示
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-warning-websoft9.png)
+
+2. 点击警告，在弹出页面选择自动升级
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-selectauto-websoft9.png)
+
+3. 在升级页面等待直到自动升级完成
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-autoupdate-websoft9.png)
+
+4. 重启jenkins服务，Jenkins已经更新到最新稳定版  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-updatecok-websoft9.png)

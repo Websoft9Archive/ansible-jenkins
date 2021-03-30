@@ -13,7 +13,7 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 1. Using local Chrome or Firefox to visit the URL *http://DNS* or *http://Internet IP*, you will enter installation wizard of Jenkins
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installstart-websoft9.png)
 
-2. Run the command `sudo cat /var/lib/jenkins/secrets/initialAdminPassword` to get the password
+2. Run the command `sudo cat /data/wwwroot/jenkins/secrets/initialAdminPassword` to get the password
 
 3. Login the Jenkins console  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installcustomer-websoft9.png)

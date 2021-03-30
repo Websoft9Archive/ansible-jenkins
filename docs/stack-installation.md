@@ -21,10 +21,7 @@ If you have completed the Jenkins deployment on Cloud Platform, the following st
 4. Install plugins  
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installing-websoft9.png)
 
-5. Modify the password of admin user
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-modfiypw-websoft9.png)
-
-6. Create user for Jenkins  
+5. Create user for Jenkins  
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/jenkins/jenkins-installusers-websoft9.png)
 
 > More useful Jenkins guide, please refer to [Jenkins Documentation](https://www.jenkins.io/zh/doc/)

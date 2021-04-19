@@ -32,7 +32,6 @@ module.exports = [
       '/zh/admin-services',
       ['https://support.websoft9.com/docs/linux/zh/webs-nginx.html','Nginx'],
       ['https://support.websoft9.com/docs/linux/zh/lang-Java.html','Java'],
-      ['https://support.websoft9.com/docs/docker/zh','Docker'],
       ['https://support.websoft9.com/docs/linux/zh/admin-practices.html','Linux'],
     ]
   },

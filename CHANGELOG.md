@@ -1,14 +1,10 @@
 # CHANGELOG
 
-## To do
+## Release jenkins-v2.263.2  2021-1-22
+### Fixes and Enhancements
+- update to latest #2
 
-## Logs
-
-### Bug Fixes
-
-
-### Features
-
-* 2020-05-22  Add init-password
-* 2020-04-22  Add CentOS distribution
+## Release jenkins-v2.277.1  2021-4-19
+### Fixes and Enhancements
+- The new version 2.277.1 is released, please update  #3
 

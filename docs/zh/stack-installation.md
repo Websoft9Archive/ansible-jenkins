@@ -26,6 +26,31 @@
 
 > 需要了解更多 Jenkins 的使用，请参考官方文档：[Jenkins 用户文档中心](https://www.jenkins.io/zh/doc/)
 
+## Jenkins 入门向导
+
+下面范例主要讲述github上项目通过 Jenkins 自动构建部署的过程：
+
+1. 设置 Personal access tokens，自动生成的token只会显示一次，无法再次查看，请注意保存
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard1-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard2-websoft9.png)
+
+2. Jenkins全局系统设置，设置完成后请保存
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard3-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard4-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard5-websoft9.png)
+
+3. 开始构建任务，输入任务名，按流程分别输入github项目url，账号密码等信息后保存
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard6-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard7-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard8-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard9-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard10-websoft9.png)
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard11-websoft9.png)
+
+4. 在对应github项目修改后，push提交；Jenkins完成自动化构建部署
+ ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard12-websoft9.png)
+
+
 ## 常见问题
 
 #### 浏览器打开IP地址，无法访问 Jenkins（白屏没有结果）？

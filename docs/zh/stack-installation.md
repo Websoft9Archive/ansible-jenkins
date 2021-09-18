@@ -30,7 +30,7 @@
 
 下面范例主要讲述github上项目通过 Jenkins 自动构建部署的过程：
 
-1. 设置 Personal access tokens，自动生成的token只会显示一次，无法再次查看，请注意保存
+1. GitHub设置 Personal access tokens，自动生成的token只会显示一次，无法再次查看，请注意保存
  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard1-websoft9.png)
  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins-wizard2-websoft9.png)
 

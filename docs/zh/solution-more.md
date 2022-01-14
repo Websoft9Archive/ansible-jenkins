@@ -26,3 +26,9 @@
 登录Jenkins，依次打开：【【Manage Jenkins】>【Plugins Manager】
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/jenkins/jenkins_installemailplugin-websoft9.png)
+
+## API
+
+Jenkins 提供可供远程访问的 [类似 REST API](https://www.jenkins.io/doc/book/using/remote-access-api/) 以便更好的实现自动化。
+
+同时，也提供了 Java, Python, Ruby 等语言的 API SDK 开发包。  
